@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="disenio.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="temporizador">
+        <h1 id="mi-tempo">Ingresa el tiempo a medir</h1>
+        <div id="ent-datos">
+            <div id="cont-labels">
+                <label class="labels" for="mis-horas">Horas</label>
+                <label class="labels" for="mis-minutos">Minutos</label>
+                <label class="labels" for="mis-segundos">Segundos</label>
+            </div>
+            <div id="cont-inputs">
+                <input class="inputs" id="mis-horas" type="number">
+                <input class="inputs" id="mis-minutos" type="number">
+                <input class="inputs" id="mis-segundos" type="number">
+            </div>
+            <div id="cont-boton">
+                <button id="boton-temp" onclick="inicioTempo()">Iniciar</button>
+            </div>
+        </div>
+    </div>
+    <script src="manejo.js"></script>
+</body>
+</html>
