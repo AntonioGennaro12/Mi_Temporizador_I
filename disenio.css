@@ -9,22 +9,46 @@ body {
     font-family: Helvetica;
 }
 
-#temporizador {
-    width: 550px;
+#time-machine {
+    width: 500px; /* 550 px */
+    height: fit-content;
 }
 
-#mi-tempo {
-    border: solid 5px blue;
+#mis-titulos {
+    font-family: "MiFuente";
+    font-size: 26px; 
+    color: blue;
+    background-color: aquamarine;
+    font-weight: bolder;
+    margin-top: -1px;
+    margin-bottom: -23px; /* eran 25px */
+}
+
+/* Contenedores específicos */
+#temporizador, #cronometro {
+    border: solid 3px blue;
     background-color: azure;
+    margin-bottom: 1px;
+}
+
+/* Display 7 segmentos del temporizador y Cronómetro */
+#mi-tempo, #mi-crono {
+    border: solid 4px blue;
+    border-left: 3px;
+    border-right: 3px;
+    background-color: lightyellow;
     white-space: pre ;
     color: darkgreen;
-    font-size: 38px;
+    font-size: 38px; /* 38px*/
     text-align: center;
     font-family: "MiFuente";
+    margin-bottom: 1px;
     
 }
 #ent-datos {
-    border: solid 4px blue;
+    border: solid 3px blue;
+    border-left: 1px;
+    border-right: 1px;
 }
 
 #cont-labels {
@@ -34,7 +58,7 @@ body {
 
 .labels {
     text-align: center;
-    border: solid 1px blue;
+    border: solid 0px blue;
     font-family: Helvetica;
     font-weight: bolder;
     background-color: aqua;
@@ -59,17 +83,33 @@ body {
     width: 100%;
 }
 
-#cont-boton {
+#cont-boton, #crono-boton {
     flex: 1;
     display: flex;
-    border: solid 1px blue;
     width: 100%;
 }
 
-#boton-temp {
+.bot-tempo {
+    border: solid 2px blue;
+    border-radius: 10px;
     font-family: Helvetica;
     font-weight: bolder;
-    font-size: 22px;
+    font-size: 20px; /*22px*/
+    margin: 2px;
     width: 100%;
     color: blue;
+}
+
+#cont-registros {
+    border: solid 2px blue;
+    display: none;
+    background-color: aqua;
+}
+p {
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 17px; /* 17px */
+    color: blue;
+    margin-top: -0px;
+    margin-bottom: -1px;
 }

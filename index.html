@@ -7,21 +7,37 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="temporizador">
-        <h1 id="mi-tempo">Ingresa el tiempo a medir</h1>
-        <div id="ent-datos">
-            <div id="cont-labels">
-                <label class="labels" for="mis-horas">Horas</label>
-                <label class="labels" for="mis-minutos">Minutos</label>
-                <label class="labels" for="mis-segundos">Segundos</label>
-            </div>
-            <div id="cont-inputs">
-                <input class="inputs" id="mis-horas" type="number">
-                <input class="inputs" id="mis-minutos" type="number">
-                <input class="inputs" id="mis-segundos" type="number">
+    <div id="time-machine">
+        <div id="temporizador">
+            <h1 id="mis-titulos">*** T E M P O R I Z A D O R *** v1.0</h1>
+            <h1 id="mi-tempo">Ingresa el tiempo a medir</h1>
+            <div id="ent-datos">
+                <div id="cont-labels">
+                    <label class="labels" for="mis-horas">Horas</label>
+                    <label class="labels" for="mis-minutos">Minutos</label>
+                    <label class="labels" for="mis-segundos">Segundos</label>
+                </div>
+                <div id="cont-inputs">
+                    <input class="inputs" id="mis-horas" type="number">
+                    <input class="inputs" id="mis-minutos" type="number">
+                    <input class="inputs" id="mis-segundos" type="number">
+                </div>
             </div>
             <div id="cont-boton">
-                <button id="boton-temp" onclick="inicioTempo()">Iniciar</button>
+                <button class="bot-tempo" id="boton-temp2" onclick="cancelTempo()" style="display: none;">Cancelar</button>
+                <button class="bot-tempo" id="boton-temp1" onclick="inicioTempo()">Iniciar Temporizador</button>
+            </div>
+        </div>
+        <div id="cronometro">
+            <h1 id="mis-titulos">*** C R O N O N O M E T R O *** v1.0</h1>
+            <h1 id="mi-crono">d : h : m : s : c</h1>
+            <div id="crono-boton">
+                <button class="bot-tempo" id="boton-cron1" onclick="clickCrono1()">Iniciar Cronómetro</button>
+                <button class="bot-tempo" id="boton-cron2" onclick="clickCrono2()" style="display: none;">Continuar</button>
+                <button class="bot-tempo" id="boton-cron3" onclick="clickCrono3()" style="display: none;">Lap</button>
+            </div>
+            <div id="cont-registros">
+                <p></p>
             </div>
         </div>
     </div>
